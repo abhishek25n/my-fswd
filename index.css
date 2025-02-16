@@ -8,8 +8,21 @@ h1{
     font-size: 90px;
 }
 button{
-    background-color:magenta;
+    background-color:black;
+    color:honeydew;
     font-size: 35px;
     display:block;
     margin: 0 auto;
-}
+    margin-top: -60px;}
+    
+    .image-container {
+        display: flex;
+        justify-content: center; /* Center the images horizontally */
+        align-items: center; /* Align images vertically */
+        gap: 10px; /* Space between images */
+    }
+    
+    .image-container img {
+        width: 15%; /* Adjust the size of each image */
+        height: auto; /* Maintain aspect ratio */
+    }  
