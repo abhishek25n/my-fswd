@@ -12,7 +12,7 @@ h1 {
 button {
     background-color: black;
     color: red;
-    font-size: 5vw; /* Responsive font size */
+    font-size: 5vw; /* Responsive size */
     display: block;
     margin: 0 auto;
     margin-top: -30px;
@@ -21,50 +21,44 @@ button {
     cursor: pointer;
 }
 
-/* Image container - Make it responsive */
+/* Image container - Keeps images in one row */
 .image-container {
     display: flex;
-    justify-content: center; /* Center the images */
-    align-items: flex-end; /* Align images at the bottom */
-    gap: 10px; /* Space between images */
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    justify-content: center; /* Center images */
+    align-items: flex-end; /* Align at bottom */
+    gap: 5px; /* Reduce space between images */
     max-width: 100%;
     padding: 10px;
 }
 
-/* Image styling - Ensure they resize on mobile */
+/* Image styling - Reduce size for smaller screens */
 .image-container img {
-    width: 30vw; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 150px; /* Prevent images from getting too big */
+    width: 20vw; /* Adjust image size responsively */
+    height: auto;
+    max-width: 120px; /* Limit size on large screens */
 }
 
 /* Individual Image Adjustments */
 .img1 {
-    margin-top: -5vw; /* Adjust position responsively */
+    margin-top: -3vw; /* Adjust positioning */
 }
 
 .img2, .img3 {
-    margin-top: -3vw;
+    margin-top: -2vw;
 }
 
 /* Media Query for Small Screens (Mobile) */
 @media (max-width: 600px) {
-    .image-container {
-        flex-direction: column; /* Stack images vertically on small screens */
-        align-items: center;
-    }
-
     .image-container img {
-        width: 50vw; /* Make images larger on small screens */
-        max-width: 200px;
+        width: 25vw; /* Reduce image size more for mobile */
+        max-width: 90px;
     }
 
     h1 {
-        font-size: 10vw;
+        font-size: 9vw;
     }
 
     button {
-        font-size: 6vw;
+        font-size: 5.5vw;
     }
 }
