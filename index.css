@@ -26,3 +26,14 @@ button{
         width: 15%; /* Adjust the size of each image */
         height: auto; /* Maintain aspect ratio */
     }  
+    .img1 {
+        margin-top: -75px; /* Move image 20px up */
+    }
+    .img2 {
+        margin-top: -40px; /* Move image 20px up */
+    }
+    .img3 {
+        margin-top: -40px; /* Move image 20px up */
+    }
+    
+    
